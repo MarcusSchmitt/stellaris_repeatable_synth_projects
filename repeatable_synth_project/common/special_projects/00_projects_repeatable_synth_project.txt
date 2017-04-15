@@ -1,0 +1,136 @@
+# The Flesh is Weak
+special_project = {
+	key = "FLESH_IS_WEAK_PROJECT"
+	cost = {
+		base = 1000
+		scaled_modifier = {
+			limit = {
+			}
+			scope = this
+			add = 100
+			calc = pop_count
+		}
+	}
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_cybernetics
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = repeatablesynthproject.1001 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+# Show them strength
+special_project = {
+	key = "SHOW_THEM_STRENGTH_PROJECT"
+	cost = {
+		base = 100
+		scaled_modifier = {
+			limit = {
+				species = {
+					NOR = {
+						has_trait = trait_cybernetic
+						has_trait = trait_mechanical
+					}
+				}
+			}
+			scope = this
+			add = 100
+			calc = pop_count
+		}
+	}
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_cybernetics
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = repeatablesynthproject.2501 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+# Synthetic Evolution
+special_project = {
+	key = "SYNTHETIC_EVOLUTION_PROJECT"
+	cost = {
+		base = 1000
+		scaled_modifier = {
+			limit = {
+			}
+			scope = this
+			add = 200
+			calc = pop_count
+		}
+	}
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_robot_assembly_plant
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = repeatablesynthproject.1002 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
+
+# Assimilate all project
+special_project = {
+	key = "ASSIMILATE_ALL_PROJECT"
+	cost = {
+		base = 100
+		scaled_modifier = {
+			limit = {
+				species = {
+					has_trait = trait_cybernetic
+				}
+			}
+			scope = this
+			add = 200
+			calc = pop_count
+		}
+	}
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_robot_assembly_plant
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+		owner = {
+			country_event = { id = repeatablesynthproject.2551 }
+		}
+	}
+	
+	on_fail = {
+	}
+}
