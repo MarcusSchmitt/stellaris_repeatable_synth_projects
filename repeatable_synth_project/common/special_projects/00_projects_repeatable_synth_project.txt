@@ -5,6 +5,12 @@ special_project = {
 		base = 1000
 		scaled_modifier = {
 			limit = {
+				species = {
+					NOR = {
+						has_trait = trait_cybernetic
+						has_trait = trait_mechanical
+					}
+				}
 			}
 			scope = this
 			add = 100
@@ -75,6 +81,9 @@ special_project = {
 		base = 1000
 		scaled_modifier = {
 			limit = {
+				species = {
+					has_trait = trait_cybernetic
+				}
 			}
 			scope = this
 			add = 200
