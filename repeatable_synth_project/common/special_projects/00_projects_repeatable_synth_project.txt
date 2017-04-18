@@ -51,7 +51,7 @@ special_project = {
 				}
 			}
 			scope = this
-			add = 100
+			add = 75
 			calc = pop_count
 		}
 	}
@@ -121,7 +121,7 @@ special_project = {
 				}
 			}
 			scope = this
-			add = 200
+			add = 150
 			calc = pop_count
 		}
 	}
